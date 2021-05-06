@@ -7,6 +7,9 @@
   margin-top: 2vh;
   outline: solid black 1px;
 }
+.Usuarios img {
+  height: 20vh;
+}
 .botones {
   margin-top: 2vh;
 }

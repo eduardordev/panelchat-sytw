@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import './grid.css';
-
+import User from '../images/user.png';
 function prueba() {
     const elements = [Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios()];
     return (
@@ -17,6 +17,8 @@ function prueba() {
 }
 
 function Usuarios() {
+
+
     return (
         <Container fluid className="grid">
             <Row justify="between">
@@ -24,6 +26,8 @@ function Usuarios() {
 
                     <h1>User Name</h1>
                     <p> CHAT</p>
+                    <img src={User} />
+
 
 
                 </Col>
