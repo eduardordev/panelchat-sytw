@@ -1,17 +1,17 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
+import { Container, Row, Col } from 'react-bootstrap';
 import './grid.css';
 import User from '../images/user.png';
 function prueba() {
     const elements = [Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios(), Usuarios()];
     return (
-
-        <ul>
-            {elements.map((value, index) => {
-                return <div key={index}>{value}</div>
-            })}
-        </ul>
-
+        <div className="divCentral">
+            <ul>
+                {elements.map((value, index) => {
+                    return <div key={index}>{value}</div>
+                })}
+            </ul>
+        </div >
 
     )
 }
@@ -20,6 +20,7 @@ function Usuarios() {
 
 
     return (
+
         <Container fluid className="grid">
             <Row justify="between">
                 <Col className="Usuarios">
@@ -53,6 +54,7 @@ function Usuarios() {
 
 
         </Container>
+
 
     )
 
